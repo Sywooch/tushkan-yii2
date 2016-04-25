@@ -5,7 +5,7 @@ use yii\base\Component;
 use yii\base\InvalidConfigException;
 
 class DateHelper extends Component {
-    public function formatDate($timestamp){
+    public static function formatDate($timestamp){
         $date_time_array = getdate(time());
         $month = $date_time_array['mon'];
         $day = $date_time_array['mday'];
